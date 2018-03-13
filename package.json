@@ -1,0 +1,15 @@
+{
+  "name": "node-firebase",
+  "version": "1.0.0",
+  "description": "This is a node app that connects to a firebase db.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^4.11.0",
+    "firebase-admin": "^5.10.0"
+  }
+}
