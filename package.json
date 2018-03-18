@@ -11,5 +11,8 @@
   "dependencies": {
     "firebase": "^4.11.0",
     "firebase-admin": "^5.10.0"
+  },
+  "devDependencies": {
+    "onoff": "^2.0.0"
   }
 }

@@ -1,4 +1,5 @@
-
+const Gpio = require('onoff').Gpio; //include onoff to interact with the GPIO
+const LED = new Gpio(4, 'out')
 const firebase = require("firebase");
 const config = {
     apiKey: "AIzaSyBn2MGA2GZ0TdDDAqeP4u31VC_9g4vR6BE",
@@ -22,8 +23,10 @@ dbRefObject.on("value", snap => {
 function turnLightOnOrOff(val) {
     if(val) {
         console.log('turning light on');
+        LED.writeSync(0);
     }
     else {
         console.log('turning light off');
+        LED.writeSync(1);
     }
 }
